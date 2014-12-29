@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_color">#191919</color>
+    <color name="text_color_light">#7e7e7e</color>
+    <color name="diliver">#c7c8c8</color>
+    <color name="global_bg">#fbfcfc</color>
+    <color name="title_bg">#37bcb2</color>
+    <color name="title_bg_pressed">#99dcd7</color>
+
+</resources>
