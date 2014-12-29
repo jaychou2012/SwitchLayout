@@ -5,7 +5,13 @@ import android.graphics.Matrix;
 import android.view.animation.Animation;
 import android.view.animation.Transformation;
 
-public class FlipAnimation extends Animation {// 此类为使用他人的类
+/**
+ * 此类为使用他人的类
+ * 
+ * @author 85204_000
+ * 
+ */
+public class FlipAnimation extends Animation {
 	/** 值为true时可明确查看动画的旋转方向。 */
 	public static final boolean DEBUG = false;
 	/** 沿Y轴正方向看，数值减1时动画逆时针旋转。 */
