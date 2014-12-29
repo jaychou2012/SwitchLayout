@@ -21,6 +21,6 @@ QQ：852041173
 如果有什么建议，也可以反馈给我，会及时升级SwitchLayout库。
 
 ===================================
-源码过段时间发布，谢谢支持！
+源码已经发布，谢谢支持！
 
 ![](http://img.blog.csdn.net/20141229011852906?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvamF5MTAwNTAw/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)  
