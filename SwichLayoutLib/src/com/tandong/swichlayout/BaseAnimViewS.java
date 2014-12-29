@@ -1,6 +1,7 @@
 package com.tandong.swichlayout;
 
 import android.animation.ObjectAnimator;
+import android.util.Log;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.Interpolator;
@@ -310,13 +311,17 @@ public class BaseAnimViewS {
 
 	}
 
-	public static Animation ShakeMode(Interpolator inter) {
+	public static Animation ShakeMode(Interpolator inter, Integer shakeCount) {
 		transAnim = new TranslateAnimation(Animation.RELATIVE_TO_PARENT, -0.1f,
 				Animation.RELATIVE_TO_PARENT, 0.1f,
 				Animation.RELATIVE_TO_PARENT, 0, Animation.RELATIVE_TO_PARENT,
 				0);
-		transAnim.setRepeatCount(4);
-		transAnim.setDuration(300);
+		if (shakeCount == null) {
+			transAnim.setRepeatCount(1);
+		} else {
+			transAnim.setRepeatCount(shakeCount);
+		}
+		transAnim.setDuration(400);
 		if (inter != null) {
 			transAnim.setInterpolator(inter);
 		} else {

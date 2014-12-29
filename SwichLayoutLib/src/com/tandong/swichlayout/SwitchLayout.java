@@ -562,9 +562,9 @@ public abstract class SwitchLayout {
 	}
 
 	public static void getShakeMode(Activity context, boolean isCloseActivity,
-			Interpolator interpolator) {
+			Interpolator interpolator, Integer shakeCount) {
 		activity = context;
-		anim = BaseAnimViewS.ShakeMode(interpolator);
+		anim = BaseAnimViewS.ShakeMode(interpolator, shakeCount);
 		if (isCloseActivity) {
 			anim.setAnimationListener(animListener);
 			anim.setFillAfter(true);
@@ -675,8 +675,8 @@ public abstract class SwitchLayout {
 	}
 
 	public static void getShakeMode(View view, boolean isCloseActivity,
-			Interpolator interpolator) {
-		anim = BaseAnimViewS.ShakeMode(interpolator);
+			Interpolator interpolator, Integer shakeCount) {
+		anim = BaseAnimViewS.ShakeMode(interpolator, shakeCount);
 		if (isCloseActivity) {
 			anim.setAnimationListener(animListener);
 			anim.setFillAfter(true);
@@ -688,7 +688,7 @@ public abstract class SwitchLayout {
 
 	/***************************************************************************/
 
-	private static View getRootView(Activity context) {
+	public static View getRootView(Activity context) {
 
 		return ((ViewGroup) context.findViewById(android.R.id.content))
 				.getChildAt(0);
