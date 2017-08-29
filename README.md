@@ -12,7 +12,18 @@ switchlayout demo提交
 
 QQ：852041173
 
-项目开源！推荐使用jar包形式！
+项目开源！
+
+使用方法：
+
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+ 
+ compile 'com.github.jaychou2012:SwitchLayout:1.0.0.0'
 
 没有经过作者允许，不可修改项目库源码自行发布。
 
