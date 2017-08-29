@@ -16,17 +16,18 @@ QQ：852041173
 
 使用方法：
 
-`allprojects {
+<pre><code>
+allprojects {
 		repositories {
 			...
-			maven { url 'https://jitpack.io' }
+			maven { url 'https://www.jitpack.io' }
 		}
 	}
- `
- Gradle引用：
- `
- compile 'com.github.jaychou2012:SwitchLayout:1.0.0.0'
- `
+</pre></code>
+
+<pre><code>
+     compile 'com.github.jaychou2012:SwitchLayout:1.0.0.0'
+</pre></code>
 
 没有经过作者允许，不可修改项目库源码自行发布。
 
